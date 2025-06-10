@@ -7,6 +7,7 @@
   <modules>
     <module>Example</module>
     <module>Homepage</module>
+    <module>Oleksandr-JR</module>
   </modules>
   <version>1.0</version>
   <name>JR-PARSE-M3-FP Maven Webapp</name>
