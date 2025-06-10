@@ -19,6 +19,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>Oleksandr-JR-2</finalName>
+    <finalName>oleksandr-jr</finalName>
   </build>
 </project>

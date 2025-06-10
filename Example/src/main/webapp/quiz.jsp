@@ -24,7 +24,7 @@
 </head>
 <body>
 <h1>Take the Quiz</h1>
-<form action="${pageContext.request.contextPath}/quiz" method="post">
+<form action="${pageContext.request.contextPath}" method="post">
     <table>
         <tr>
             <th>#</th>
