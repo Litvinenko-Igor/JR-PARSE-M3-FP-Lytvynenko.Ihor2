@@ -30,7 +30,7 @@ public class QuizServlet extends HttpServlet {
     @Override
     @SuppressWarnings("unchecked")
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // Retrieve questions from session
+        // Retrieve questions from a session
         List<Question> questions = (List<Question>) req.getSession().getAttribute("questions");
 
 
