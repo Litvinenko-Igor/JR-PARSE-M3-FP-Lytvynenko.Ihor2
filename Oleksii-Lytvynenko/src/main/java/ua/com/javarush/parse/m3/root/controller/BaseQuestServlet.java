@@ -9,27 +9,16 @@ import java.io.IOException;
 
 public abstract class BaseQuestServlet extends HttpServlet {
 
-    // Пути к JSP-файлам
-    protected static final String QUEST_JSP_REQUEST_PATH = "/WEB-INF/views/game.jsp";
-    protected static final String QUEST_FINISH_JSP_REQUEST_PATH = "/WEB-INF/views/result.jsp";
-
-    // Эндпоинты
-    protected static final String FINISH_QUEST_END_POINT = "finishQuest";
-
-    // Имена атрибутов
-    protected static final String QUEST_SERVICE_ATTRIBUTE_NAME = "questService";
+    protected static final String QUEST_JSP_REQUEST_PATH = "/game.jsp";
+    protected static final String QUEST_RESULTS_JSP_PATH = "/result.jsp";
+    protected static final String QUEST_STARTING_POINT = "starting-point";
     protected static final String DECISION_ATTRIBUTE_NAME = "decision";
     protected static final String OPTION_CHOICE_PARAMETER_NAME = "choiceIndex";
     protected static final String CHOICE_CONTEXT_PARAMETER_NAME = "choiceContext";
     protected static final String TITLE_ATTRIBUTE_NAME = "title";
     protected static final String STORY_ATTRIBUTE_NAME = "story";
-    protected static final String QUEST_END_ATTRIBUTE_NAME = "end";
-
-    // Работа с сессией
     protected static final String CURRENT_STEP = "currentStep";
     protected static final String ATTEMPTS = "attempts";
-
-    // Визуальные настройки (если используются)
     protected static final String QUEST_CONTAINER_BACKGROUND_IMAGE_NAME = "questContainerBackground";
     protected static final String DEFAULT_QUEST_FILE = "WEB-INF/DungeonQuest.json";
 

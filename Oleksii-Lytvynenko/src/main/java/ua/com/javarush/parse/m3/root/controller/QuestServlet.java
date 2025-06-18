@@ -34,26 +34,11 @@ public class QuestServlet extends BaseQuestServlet {
             decisionKey = (String) session.getAttribute(CURRENT_STEP);
         }
         if (decisionKey == null || !quest.getDecisions().containsKey(decisionKey)) {
-            decisionKey = "look-around";
-            session.setAttribute(ATTEMPTS, 0);
+            decisionKey = QUEST_STARTING_POINT;
         }
-
         String chosenTitle = null;
         String chosenStory = null;
-
-        String choiceKey = request.getParameter("choice");
-        if (choiceKey != null) {
-            Quest.Decision prevDecision = quest.getDecisions().get((String) session.getAttribute(CURRENT_STEP));
-            Quest.Option chosenOption = prevDecision.getOptions().stream()
-                    .filter(o -> o.getNext().equals(choiceKey))
-                    .findFirst().orElse(null);
-            if (chosenOption != null) {
-                chosenTitle = chosenOption.getTitle();
-                chosenStory = chosenOption.getStory();
-                decisionKey = choiceKey;
-            }
-        }
-        String choiceIndexStr = request.getParameter("choiceIndex");
+        String choiceIndexStr = request.getParameter(OPTION_CHOICE_PARAMETER_NAME);
         if (choiceIndexStr != null) {
             try {
                 int choiceIndex = Integer.parseInt(choiceIndexStr);
@@ -69,27 +54,34 @@ public class QuestServlet extends BaseQuestServlet {
             }
         }
         if (decisionKey.equals("DEAD") || decisionKey.equals("WIN")) {
-            int attempts = (int) session.getAttribute(ATTEMPTS);
-            session.setAttribute(ATTEMPTS, attempts + 1);
-            session.removeAttribute(CURRENT_STEP);
-            request.setAttribute("outcome", decisionKey.equals("DEAD") ? "dead" : "win");
-            request.setAttribute(ATTEMPTS, attempts + 1);
-            request.getRequestDispatcher("/result.jsp").forward(request, response);
+            redirectToResultPage(request, response, session, decisionKey);
             return;
         }
-
         session.setAttribute(CURRENT_STEP, decisionKey);
-
         Map<String, Quest.Decision> decisions = quest.getDecisions();
         Quest.Decision decision = decisions.get(decisionKey);
+        setRequestAttributes(request, decisionKey, decision, chosenTitle, chosenStory);
+        request.getRequestDispatcher(QUEST_JSP_REQUEST_PATH).forward(request, response);
+    }
 
+    private static void redirectToResultPage(HttpServletRequest request, HttpServletResponse response, HttpSession session, String decisionKey) throws ServletException, IOException {
+        Object attemptsObj = session.getAttribute(ATTEMPTS);
+        int attempts = (attemptsObj instanceof Integer) ? (Integer) attemptsObj : 0;
+        attempts++;
+        session.setAttribute(ATTEMPTS, attempts);
+        request.setAttribute(ATTEMPTS, attempts);
+
+        session.removeAttribute(CURRENT_STEP);
+        request.setAttribute("outcome", decisionKey.equals("DEAD") ? "dead" : "win");
+        request.getRequestDispatcher(QUEST_RESULTS_JSP_PATH).forward(request, response);
+    }
+
+    private void setRequestAttributes(HttpServletRequest request, String decisionKey, Quest.Decision decision, String chosenTitle, String chosenStory) {
         request.setAttribute("title", quest.getTitle());
         request.setAttribute("story", quest.getStory());
         request.setAttribute("decisionKey", decisionKey);
         request.setAttribute("decision", decision);
         request.setAttribute("chosenTitle", chosenTitle);
         request.setAttribute("chosenStory", chosenStory);
-
-        request.getRequestDispatcher("/game.jsp").forward(request, response);
     }
 }
