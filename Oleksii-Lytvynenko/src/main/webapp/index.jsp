@@ -3,19 +3,20 @@
 <head>
     <title>Dungeon Quest</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <link rel="icon" href="img/logo.jpg">
 </head>
 <body>
 <div>
     <h1 id="header" class="header">
-        Побег из подземелья
+        Dungeon Quest
     </h1>
 </div>
 <div class="story-box">
-    <h2 class="story-container">Вы просыпаетесь в темной комнате с кандалами на ногах. Ваша цель — выбраться из подземелья.</h2>
+    <h2 class="story-container">Ти прокидаєшся в темній кімнаті з кайданками на ногах. Твоя мета — втекти з цього підземелля.</h2>
 </div>
 <div class="button-container">
     <form action="game" method="get">
-        <button class="submit-button" type="submit">Начать игру</button>
+        <button class="submit-button" type="submit">Почати гру</button>
     </form>
 </div>
 </body>

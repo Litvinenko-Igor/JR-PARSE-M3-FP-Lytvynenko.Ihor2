@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #111;
+    background: url("/img/background.jpg") no-repeat center center fixed;
     color: #fff;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
@@ -33,9 +33,20 @@ body {
     color: #f5c542;
 }
 
+.game-story {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: goldenrod;
+}
+
 .decision-prompt {
     font-size: 36px;
     margin-bottom: 30px;
+    color: #f5c542;
+}
+
+.result-message {
+    font-size: 24px;
     color: #f5c542;
 }
 

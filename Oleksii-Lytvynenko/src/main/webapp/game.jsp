@@ -4,15 +4,16 @@
 <head>
     <title>${title}</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <link rel="icon" href="img/logo.jpg">
 </head>
 <body>
 <div class="story-box">
 <c:if test="${not empty chosenStory}">
     <h3 class="game-title">${chosenTitle}</h3>
-    <p>${chosenStory}</p>
+    <p class="game-story">${chosenStory}</p>
     <form method="get" action="game">
         <input type="hidden" name="next" value="${decisionKey}"/>
-        <button class="submit-button" type="submit">Продолжить</button>
+        <button class="submit-button" type="submit">Продовжити</button>
     </form>
 </c:if>
 
