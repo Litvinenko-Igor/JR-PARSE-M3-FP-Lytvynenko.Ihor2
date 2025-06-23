@@ -14,6 +14,7 @@
     <module>Example</module>
     <module>Homepage</module>
     <module>Oleksandr-JR</module>
+    <module>Vlad-JR</module>
   </modules>
 
   <version>1.0</version>
@@ -100,7 +101,7 @@
 
   <build>
     <!-- @TODO Please, change the name. This would be used as a URL path -->
-    <finalName>example</finalName>
+    <finalName>JR_Vlad</finalName>
 
     <plugins>
       <!-- 1) Compiler + Lombok -->
