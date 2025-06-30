@@ -8,12 +8,12 @@
   <artifactId>JR-PARSE-M3-FP</artifactId>
   <packaging>pom</packaging>
 
-
   <!-- @TODO Please, make sure your module is enabled here -->
   <modules>
     <module>Example</module>
     <module>Homepage</module>
     <module>Oleksandr-JR</module>
+    <module>Andrii-Gul</module>
   </modules>
 
   <version>1.0</version>
@@ -79,17 +79,17 @@
       <version>${lombok.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.glassfish.web</groupId>
-      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-      <version>${jakarta.servlet.jsp.jstl.version}</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.glassfish.web</groupId>-->
+<!--      <artifactId>jakarta.servlet.jsp.jstl</artifactId>-->
+<!--      <version>${jakarta.servlet.jsp.jstl.version}</version>-->
+<!--    </dependency>-->
 
-    <dependency>
-      <groupId>jakarta.servlet.jsp.jstl</groupId>
-      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-      <version>${jakarta.servlet.jsp.jstl.version}</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>jakarta.servlet.jsp.jstl</groupId>-->
+<!--      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>-->
+<!--    <version>${jakarta.servlet.jsp.jstl.version}</version>-->
+<!--  </dependency>-->
 
     <dependency>
       <groupId>org.apache.commons</groupId>
