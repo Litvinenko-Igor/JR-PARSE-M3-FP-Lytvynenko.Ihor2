@@ -28,7 +28,7 @@
     <table>
         <tr>
             <th>#</th>
-            <th>Question</th>
+            <th>QuestStart.Question</th>
             <th>Options</th>
         </tr>
         <c:forEach var="question" items="${sessionScope.questions}" varStatus="status">
