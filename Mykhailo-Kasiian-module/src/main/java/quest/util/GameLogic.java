@@ -31,7 +31,7 @@ public class GameLogic {
 
     public String getQuestion() {
         return switch (step) {
-            case START -> "Ви втрачаєте пам’ять. Прийняти виклик НЛО?";
+            case START -> "Ви втрачаєте пам'ять. Прийняти виклик НЛО?";
             case CALL_ACCEPTED -> "Ви прийняли виклик. Піднятися на капітанський місток?";
             case ON_BRIDGE -> "Ви піднялися на місток. Хто ви?";
             default -> "Гра завершена.";
