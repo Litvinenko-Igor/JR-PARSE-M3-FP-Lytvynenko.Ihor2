@@ -20,6 +20,7 @@ public class GameLogic {
         }
     }
 
+
     public boolean isVictory() {
         return step == Step.VICTORY;
     }
