@@ -1,0 +1,75 @@
+.header {
+
+}
+
+body {
+    background: url("/img/background.jpg") no-repeat center center fixed;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+.story-box {
+    background-color: #222;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.story-container {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f1f1f1;
+    text-align: justify;
+}
+
+.game-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f5c542;
+}
+
+.game-story {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: goldenrod;
+}
+
+.decision-prompt {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f5c542;
+}
+
+.result-message {
+    font-size: 24px;
+    color: #f5c542;
+}
+
+.dead {
+    font-size: 36px;
+    color: maroon;
+}
+
+.win {
+    font-size: 36px;
+    color: green;
+}
+
+.submit-button {
+    background-color: #3498db;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
