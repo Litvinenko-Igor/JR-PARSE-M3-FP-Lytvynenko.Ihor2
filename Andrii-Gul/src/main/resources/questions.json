@@ -1,0 +1,576 @@
+[
+  {
+    "id": 1,
+    "text": "Які річки знаходяться в Африці?",
+    "options": ["Ніл", "Амазонка", "Конго", "Міссісіпі"],
+    "correctAnswers": ["Ніл", "Конго"],
+    "imageUrl": "/img/question/africa-rivers.jpeg",
+    "continent": "Africa"
+  },
+  {
+    "id": 2,
+    "text": "Які тварини мешкають в Африці?",
+    "options": ["Слон", "Кенгуру", "Лев", "Білий ведмідь"],
+    "correctAnswers": ["Слон", "Лев"],
+    "imageUrl": "/img/question/africa-animals.jpg",
+    "continent": "Africa"
+  },
+  {
+    "id": 3,
+    "text": "Які тварини мешкають в Австралії?",
+    "options": ["Коала", "Кенгуру", "Панда", "Ему"],
+    "correctAnswers": ["Коала", "Кенгуру", "Ему"],
+    "imageUrl": "img/question/australia-animals.jpg",
+    "continent": "Oceania"
+  },
+  {
+    "id": 4,
+    "text": "Столицею якої країни є Париж?",
+    "options": ["Німеччина", "Італія", "Франція", "Іспанія"],
+    "correctAnswers": ["Франція"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 5,
+    "text": "Яка пустеля розташована в Південній Америці?",
+    "options": ["Сахара", "Гобі", "Атакама", "Калахарі"],
+    "correctAnswers": ["Атакама"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 6,
+    "text": "Які гори знаходяться в Росії?",
+    "options": ["Урал", "Альпи", "Кавказ", "Гімалаї"],
+    "correctAnswers": ["Урал", "Кавказ"],
+    "imageUrl": "img/russia-mountains.jpg",
+    "continent": "Asia",
+    "country": "Росія"
+  },
+  {
+    "id": 7,
+    "text": "Який океан омиває Антарктиду?",
+    "options": ["Тихий", "Атлантичний", "Південний", "Індійський"],
+    "correctAnswers": ["Південний"],
+    "imageUrl": null,
+    "continent": "Antarctica"
+  },
+  {
+    "id": 8,
+    "text": "В якій країні знаходиться Велика Китайська стіна?",
+    "options": ["Японія", "Індія", "Китай", "Монголія"],
+    "correctAnswers": ["Китай"],
+    "imageUrl": null,
+    "continent": "Asia",
+    "country": "Китай"
+  },
+  {
+    "id": 9,
+    "text": "Столиця Німеччини?",
+    "options": ["Мюнхен", "Берлін", "Гамбург", "Франкфурт"],
+    "correctAnswers": ["Берлін"],
+    "imageUrl": null,
+    "continent": "Europe",
+    "country": "Німеччина"
+  },
+  {
+    "id": 10,
+    "text": "В якому місті знаходиться Колізей?",
+    "options": ["Рим", "Венеція", "Мілан", "Неаполь"],
+    "correctAnswers": ["Рим"],
+    "imageUrl": null,
+    "continent": "Europe",
+    "country": "Італія"
+  },
+  {
+    "id": 11,
+    "text": "Яка гора є найвищою вершиною Африки?",
+    "options": ["Монблан", "Еверест", "Кенія", "Кіліманджаро"],
+    "correctAnswers": ["Кіліманджаро"],
+    "imageUrl": null,
+    "continent": "Africa"
+  },
+  {
+    "id": 12,
+    "text": "Столиця Японії?",
+    "options": ["Кіото", "Осака", "Токіо", "Хіросіма"],
+    "correctAnswers": ["Токіо"],
+    "imageUrl": null,
+    "continent": "Asia",
+    "country": "Японія"
+  },
+  {
+    "id": 13,
+    "text": "В якій країні знаходиться Тадж-Махал?",
+    "options": ["Пакистан", "Індія", "Бангладеш", "Непал"],
+    "correctAnswers": ["Індія"],
+    "imageUrl": null,
+    "continent": "Asia",
+    "country": "Індія"
+  },
+  {
+    "id": 14,
+    "text": "Столиця Канади?",
+    "options": ["Торонто", "Монреаль", "Ванкувер", "Оттава"],
+    "correctAnswers": ["Оттава"],
+    "imageUrl": null,
+    "continent": "NorthAmerica"
+  },
+  {
+    "id": 15,
+    "text": "Де знаходиться Гранд-Каньйон?",
+    "options": ["Канада", "Мексика", "США", "Бразилія"],
+    "correctAnswers": ["США"],
+    "imageUrl": null,
+    "continent": "NorthAmerica",
+    "country": "США"
+  },
+  {
+    "id": 16,
+    "text": "Столиця Бразилії?",
+    "options": ["Ріо-де-Жанейро", "Сан-Паулу", "Бразиліа", "Салвадор"],
+    "correctAnswers": ["Бразиліа"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 17,
+    "text": "Де знаходиться Мачу-Пікчу?",
+    "options": ["Чилі", "Болівія", "Колумбія", "Перу"],
+    "correctAnswers": ["Перу"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 18,
+    "text": "Столиця Австралії?",
+    "options": ["Сідней", "Мельбурн", "Канберра", "Перт"],
+    "correctAnswers": ["Канберра"],
+    "imageUrl": null,
+    "continent": "Oceania"
+  },
+  {
+    "id": 19,
+    "text": "Яка тварина є символом Нової Зеландії?",
+    "options": ["Коала", "Кенгуру", "Ківі", "Ему"],
+    "correctAnswers": ["Ківі"],
+    "imageUrl": null,
+    "continent": "Oceania"
+  },
+  {
+    "id": 20,
+    "text": "Чи є в Антарктиді постійне населення?",
+    "options": ["Так, близько 1000 осіб", "Так, тільки вчені", "Ні", "Так, корінні народи"],
+    "correctAnswers": ["Ні"],
+    "imageUrl": null,
+    "continent": "Antarctica"
+  },
+  {
+    "id": 21,
+    "text": "Яке море вважається найсолонішим у світі та омиває береги Азії?",
+    "options": ["Середземне море", "Червоне море", "Мертве море", "Чорне море"],
+    "correctAnswers": ["Мертве море"],
+    "imageUrl": null,
+    "continent": "Asia"
+  },
+  {
+    "id": 22,
+    "text": "Які з цих тварин НЕ мешкають у дикій природі Африки?",
+    "options": ["Жираф", "Тигр", "Зебра", "Бегемот"],
+    "correctAnswers": ["Тигр"],
+    "imageUrl": null,
+    "continent": "Africa"
+  },
+  {
+    "id": 23,
+    "text": "Яка протока розділяє Європу та Африку?",
+    "options": ["Берингова протока", "Магелланова протока", "Гібралтарська протока", "Протока Дрейка"],
+    "correctAnswers": ["Гібралтарська протока"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 24,
+    "text": "Який водоспад, розташований на кордоні США та Канади, є одним з найвідоміших у світі?",
+    "options": ["Вікторія", "Анхель", "Ігуасу", "Ніагарський водоспад"],
+    "correctAnswers": ["Ніагарський водоспад"],
+    "imageUrl": null,
+    "continent": "NorthAmerica"
+  },
+  {
+    "id": 25,
+    "text": "Яка річка є найдовшою в Південній Америці?",
+    "options": ["Парана", "Оріноко", "Амазонка", "Магдалена"],
+    "correctAnswers": ["Амазонка"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 26,
+    "text": "Де розташований Великий Бар'єрний риф?",
+    "options": ["Біля берегів Бразилії", "Біля берегів Австралії", "У Карибському морі", "Біля берегів Індонезії"],
+    "correctAnswers": ["Біля берегів Австралії"],
+    "imageUrl": null,
+    "continent": "Oceania"
+  },
+  {
+    "id": 27,
+    "text": "Кому належить Антарктида?",
+    "options": ["США", "Росії", "Жодній країні", "Австралії"],
+    "correctAnswers": ["Жодній країні"],
+    "imageUrl": null,
+    "continent": "Antarctica"
+  },
+  {
+    "id": 28,
+    "text": "Які країни розташовані і в Європі, і в Азії?",
+    "options": ["Росія", "Туреччина", "Казахстан", "Єгипет"],
+    "correctAnswers": ["Росія", "Туреччина", "Казахстан"],
+    "imageUrl": null,
+    "continent": "Asia"
+  },
+  {
+    "id": 29,
+    "text": "Яка тварина є національним символом Китаю?",
+    "options": ["Тигр", "Дракон", "Велика панда", "Мавпа"],
+    "correctAnswers": ["Велика панда"],
+    "imageUrl": null,
+    "continent": "Asia",
+    "country": "Китай"
+  },
+  {
+    "id": 30,
+    "text": "Найвища гора в Японії?",
+    "options": ["Фудзіяма", "Кіта", "Хотака", "Айно"],
+    "correctAnswers": ["Фудзіяма"],
+    "imageUrl": null,
+    "continent": "Asia",
+    "country": "Японія"
+  },
+  {
+    "id": 31,
+    "text": "В якій країні знаходиться місто Петра, висічене у скелях?",
+    "options": ["Єгипет", "Йорданія", "Сирія", "Ізраїль"],
+    "correctAnswers": ["Йорданія"],
+    "imageUrl": null,
+    "continent": "Asia"
+  },
+  {
+    "id": 32,
+    "text": "В якому європейському місті знаходиться Лувр?",
+    "options": ["Лондон", "Мадрид", "Берлін", "Париж"],
+    "correctAnswers": ["Париж"],
+    "imageUrl": null,
+    "continent": "Europe",
+    "country": "Франція"
+  },
+  {
+    "id": 33,
+    "text": "Яка країна є батьківщиною пасти та піци?",
+    "options": ["Греція", "Іспанія", "Італія", "Франція"],
+    "correctAnswers": ["Італія"],
+    "imageUrl": null,
+    "continent": "Europe",
+    "country": "Італія"
+  },
+  {
+    "id": 34,
+    "text": "Які тварини входять до 'Великої африканської п'ятірки'?",
+    "options": ["Слон", "Жираф", "Лев", "Буйвіл", "Носоріг", "Леопард"],
+    "correctAnswers": ["Слон", "Лев", "Буйвіл", "Носоріг", "Леопард"],
+    "imageUrl": null,
+    "continent": "Africa"
+  },
+  {
+    "id": 35,
+    "text": "Яка пустеля є найбільшою в світі?",
+    "options": ["Гобі", "Сахара", "Атакама", "Антарктична полярна пустеля"],
+    "correctAnswers": ["Антарктична полярна пустеля"],
+    "imageUrl": null,
+    "continent": "Antarctica"
+  },
+  {
+    "id": 36,
+    "text": "Столиця Єгипту?",
+    "options": ["Александрія", "Луксор", "Каїр", "Гіза"],
+    "correctAnswers": ["Каїр"],
+    "imageUrl": null,
+    "continent": "Africa",
+    "country": "Єгипет"
+  },
+  {
+    "id": 37,
+    "text": "В якому штаті США знаходиться Голлівуд?",
+    "options": ["Нью-Йорк", "Флорида", "Каліфорнія", "Техас"],
+    "correctAnswers": ["Каліфорнія"],
+    "imageUrl": null,
+    "continent": "NorthAmerica",
+    "country": "США"
+  },
+  {
+    "id": 38,
+    "text": "В якій країні зародився танець танго?",
+    "options": ["Бразилія", "Іспанія", "Аргентина", "Мексика"],
+    "correctAnswers": ["Аргентина"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 39,
+    "text": "Що таке 'хака', традиція народу Маорі?",
+    "options": ["Страва з морепродуктів", "Ритуальний танець", "Музичний інструмент", "Тип човна"],
+    "correctAnswers": ["Ритуальний танець"],
+    "imageUrl": null,
+    "continent": "Oceania"
+  },
+  {
+    "id": 40,
+    "text": "Який найбільший острів у світі?",
+    "options": ["Гренландія", "Нова Гвінея", "Борнео", "Мадагаскар"],
+    "correctAnswers": ["Гренландія"],
+    "imageUrl": null,
+    "continent": "NorthAmerica"
+  },
+  {
+    "id": 41,
+    "text": "В якій країні знаходиться найвищий водоспад у світі - Анхель?",
+    "options": ["Бразилія", "Колумбія", "Венесуела", "Перу"],
+    "correctAnswers": ["Венесуела"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 42,
+    "text": "Яка тварина зображена на гербі Австралії?",
+    "options": ["Коала", "Кенгуру", "Вомбат", "Ему"],
+    "correctAnswers": ["Кенгуру", "Ему"],
+    "imageUrl": null,
+    "continent": "Oceania"
+  },
+  {
+    "id": 43,
+    "text": "На якому континенті немає жодної річки?",
+    "options": ["Австралія", "Антарктида", "Європа", "Африка"],
+    "correctAnswers": ["Антарктида"],
+    "imageUrl": null,
+    "continent": "Antarctica"
+  },
+  {
+    "id": 44,
+    "text": "Найбільше озеро у світі за площею?",
+    "options": ["Верхнє", "Вікторія", "Каспійське море", "Байкал"],
+    "correctAnswers": ["Каспійське море"],
+    "imageUrl": null,
+    "continent": "Asia"
+  },
+  {
+    "id": 45,
+    "text": "В якій країні знаходиться Стоунхендж?",
+    "options": ["Ірландія", "Франція", "Велика Британія", "Німеччина"],
+    "correctAnswers": ["Велика Британія"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 46,
+    "text": "Яка країна є батьківщиною Олімпійських ігор?",
+    "options": ["Італія", "Єгипет", "Греція", "Китай"],
+    "correctAnswers": ["Греція"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 47,
+    "text": "Який канал з'єднує Атлантичний і Тихий океани?",
+    "options": ["Суецький канал", "Панамський канал", "Біломорканал", "Кільський канал"],
+    "correctAnswers": ["Панамський канал"],
+    "imageUrl": null,
+    "continent": "NorthAmerica"
+  },
+  {
+    "id": 48,
+    "text": "Найдовший гірський ланцюг у світі?",
+    "options": ["Гімалаї", "Анди", "Кордильєри", "Альпи"],
+    "correctAnswers": ["Анди"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 49,
+    "text": "Які з цих тварин є сумчастими?",
+    "options": ["Коала", "Лінивець", "Кенгуру", "Опосум"],
+    "correctAnswers": ["Коала", "Кенгуру", "Опосум"],
+    "imageUrl": null,
+    "continent": "Oceania"
+  },
+  {
+    "id": 50,
+    "text": "Яка найнижча температура була зафіксована на Землі (на станції 'Восток')?",
+    "options": ["-68.5°C", "-75.1°C", "-89.2°C", "-98.6°C"],
+    "correctAnswers": ["-89.2°C"],
+    "imageUrl": null,
+    "continent": "Antarctica"
+  },
+  {
+    "id": 51,
+    "text": "Яка країна в Азії має найбільше населення?",
+    "options": ["Індія", "Індонезія", "Пакистан", "Китай"],
+    "correctAnswers": ["Китай"],
+    "imageUrl": null,
+    "continent": "Asia"
+  },
+  {
+    "id": 52,
+    "text": "Що з цього є традиційною стравою іспанської кухні?",
+    "options": ["Паелья", "Суші", "Борщ", "Тако"],
+    "correctAnswers": ["Паелья"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 53,
+    "text": "Яка мова є офіційною в Бразилії?",
+    "options": ["Іспанська", "Бразильська", "Португальська", "Англійська"],
+    "correctAnswers": ["Португальська"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 54,
+    "text": "Яка пустеля займає більшу частину Північної Африки?",
+    "options": ["Калахарі", "Наміб", "Аравійська", "Сахара"],
+    "correctAnswers": ["Сахара"],
+    "imageUrl": null,
+    "continent": "Africa"
+  },
+  {
+    "id": 55,
+    "text": "Яке місто США називають 'Великим яблуком'?",
+    "options": ["Лос-Анджелес", "Чикаго", "Нью-Йорк", "Вашингтон"],
+    "correctAnswers": ["Нью-Йорк"],
+    "imageUrl": null,
+    "continent": "NorthAmerica"
+  },
+  {
+    "id": 56,
+    "text": "Столиця Аргентини?",
+    "options": ["Сантьяго", "Ліма", "Богота", "Буенос-Айрес"],
+    "correctAnswers": ["Буенос-Айрес"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 57,
+    "text": "Який унікальний вид мавп мешкає тільки на острові Мадагаскар?",
+    "options": ["Горили", "Шимпанзе", "Лемури", "Орангутани"],
+    "correctAnswers": ["Лемури"],
+    "imageUrl": null,
+    "continent": "Africa"
+  },
+  {
+    "id": 58,
+    "text": "На якому острові розташована статуя Свободи?",
+    "options": ["Манхеттен", "Стетен-Айленд", "Острів Свободи", "Лонг-Айленд"],
+    "correctAnswers": ["Острів Свободи"],
+    "imageUrl": null,
+    "continent": "NorthAmerica"
+  },
+  {
+    "id": 59,
+    "text": "Яка країна подарувала світу сауну?",
+    "options": ["Швеція", "Норвегія", "Фінляндія", "Росія"],
+    "correctAnswers": ["Фінляндія"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 60,
+    "text": "Найглибше озеро у світі?",
+    "options": ["Танганьїка", "Байкал", "Верхнє", "Каспійське море"],
+    "correctAnswers": ["Байкал"],
+    "imageUrl": null,
+    "continent": "Asia",
+    "country": "Росія"
+  },
+  {
+    "id": 61,
+    "text": "Яка тварина НЕ мешкає в Південній Америці?",
+    "options": ["Капібара", "Лама", "Ягуар", "Зебра"],
+    "correctAnswers": ["Зебра"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 62,
+    "text": "Столиця Південної Кореї?",
+    "options": ["Пусан", "Інчхон", "Сеул", "Тегу"],
+    "correctAnswers": ["Сеул"],
+    "imageUrl": null,
+    "continent": "Asia"
+  },
+  {
+    "id": 63,
+    "text": "В якому місті знаходиться знаменита падаюча вежа?",
+    "options": ["Флоренція", "Рим", "Піза", "Венеція"],
+    "correctAnswers": ["Піза"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 64,
+    "text": "Який континент є найспекотнішим?",
+    "options": ["Південна Америка", "Австралія", "Африка", "Азія"],
+    "correctAnswers": ["Африка"],
+    "imageUrl": null,
+    "continent": "Africa"
+  },
+  {
+    "id": 65,
+    "text": "Який континент є найпосушливішим?",
+    "options": ["Австралія", "Африка", "Антарктида", "Азія"],
+    "correctAnswers": ["Антарктида"],
+    "imageUrl": null,
+    "continent": "Antarctica"
+  },
+  {
+    "id": 66,
+    "text": "З якої країни походить кленовий сироп?",
+    "options": ["США", "Росія", "Канада", "Фінляндія"],
+    "correctAnswers": ["Канада"],
+    "imageUrl": null,
+    "continent": "NorthAmerica"
+  },
+  {
+    "id": 67,
+    "text": "На якому острові в Тихому океані знаходяться знамениті кам'яні статуї Моаї?",
+    "options": ["Таїті", "Гаваї", "Острів Пасхи", "Фіджі"],
+    "correctAnswers": ["Острів Пасхи"],
+    "imageUrl": null,
+    "continent": "Oceania"
+  },
+  {
+    "id": 68,
+    "text": "Яка країна є найбільшою за площею в Південній Америці?",
+    "options": ["Аргентина", "Бразилія", "Колумбія", "Перу"],
+    "correctAnswers": ["Бразилія"],
+    "imageUrl": null,
+    "continent": "SouthAmerica"
+  },
+  {
+    "id": 69,
+    "text": "Найменша країна у світі, розташована в Європі?",
+    "options": ["Монако", "Ліхтенштейн", "Сан-Марино", "Ватикан"],
+    "correctAnswers": ["Ватикан"],
+    "imageUrl": null,
+    "continent": "Europe"
+  },
+  {
+    "id": 70,
+    "text": "Яка азійська країна відома як 'Країна ранкової свіжості'?",
+    "options": ["Японія", "Китай", "В'єтнам", "Південна Корея"],
+    "correctAnswers": ["Південна Корея"],
+    "imageUrl": null,
+    "continent": "Asia"
+  }
+]

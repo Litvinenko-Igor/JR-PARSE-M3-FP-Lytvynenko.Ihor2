@@ -8,13 +8,14 @@
   <artifactId>JR-PARSE-M3-FP</artifactId>
   <packaging>pom</packaging>
 
-
   <!-- @TODO Please, make sure your module is enabled here -->
   <modules>
     <module>Example</module>
     <module>Homepage</module>
     <module>Oleksandr-JR</module>
     <module>Oleksii-Lytvynenko</module>
+    <module>Andrii-Gul</module>
+    <module>Mykhailo-Kasiian-module</module>
   </modules>
 
   <version>1.0</version>
@@ -89,8 +90,8 @@
     <dependency>
       <groupId>jakarta.servlet.jsp.jstl</groupId>
       <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-      <version>${jakarta.servlet.jsp.jstl.version}</version>
-    </dependency>
+    <version>${jakarta.servlet.jsp.jstl.version}</version>
+  </dependency>
 
     <dependency>
       <groupId>org.apache.commons</groupId>
