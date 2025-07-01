@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url("/img/background.jpg") no-repeat center center fixed;
+    background: url("../img/background.jpg") no-repeat center center fixed;
     color: #fff;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;

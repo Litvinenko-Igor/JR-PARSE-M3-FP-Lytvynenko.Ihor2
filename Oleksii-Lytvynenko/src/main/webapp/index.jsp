@@ -3,7 +3,7 @@
 <head>
     <title>Dungeon Quest</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
-    <link rel="icon" href="img/logo.jpg">
+    <link rel="icon" href="../img/logo.jpg">
 </head>
 <body>
 <div>
