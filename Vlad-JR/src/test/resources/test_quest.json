@@ -1,0 +1,22 @@
+{
+  "quest_name": "Test Quest",
+  "quest_id": 123,
+  "0": {
+    "type": "question",
+    "text": "Start?",
+    "answers": [
+      { "text": "Yes", "next": "1" },
+      { "text": "No", "next": "2" }
+    ]
+  },
+  "1": {
+    "type": "result",
+    "result": true,
+    "text": "You chose yes."
+  },
+  "non_numeric": {
+    "type": "result",
+    "result": false,
+    "text": "You chose no."
+  }
+}

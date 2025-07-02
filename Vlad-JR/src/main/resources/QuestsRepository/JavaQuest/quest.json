@@ -1,0 +1,36 @@
+{
+  "quest_name": "Java Test",
+  "quest_id": 1,
+
+  "0": {
+    "type": "question",
+    "text": "Що таке JVM?",
+    "answers": [
+      { "text": "Java Virtual Machine", "next": "2" },
+      { "text": "Java Variable Method", "next": "1" }
+    ]
+  },
+  "1": {
+    "type": "result",
+    "text": "Не вірно. JVM — це Java Virtual Machine.",
+    "result": false
+  },
+  "2": {
+    "type": "question",
+    "text": "Який з наведенних типів є примітивним у Java?",
+    "answers": [
+      { "text": "String", "next": "1" },
+      { "text": "int", "next": "3" }
+    ]
+  },
+  "3": {
+    "type": "result",
+    "text": "Правильно! int — примітивный тип.",
+    "result": true
+  },
+  "4": {
+    "type": "result",
+    "text": "Не вірно! int — примітивный тип.",
+    "result": false
+  }
+}
