@@ -67,12 +67,12 @@
   </style>
 </head>
 <body>
-  <h1>Привіт, програміст!</h1>
-  <form action="game" method="get">
-    <button type="submit">Почати квест</button>
-  </form>
   <div class="story-box">
     <%= request.getAttribute("story") %>
   </div>
+
+  <form action="<%= request.getContextPath() %>/game" method="get">
+    <button type="submit">Почати квест</button>
+  </form>
 </body>
 </html>

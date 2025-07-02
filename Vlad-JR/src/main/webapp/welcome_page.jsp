@@ -6,7 +6,7 @@
 <html lang="ua">
 <head>
     <meta charset="UTF-8">
-    <title>Результат</title>
+    <title>Ласкаво просимо</title>
     <style>
         * {
             box-sizing: border-box;
@@ -25,18 +25,24 @@
             flex-direction: column;
         }
 
-        .result-box {
+        .welcome-box {
             background-color: rgba(46, 46, 46, 0.85);
             display: inline-block;
             padding: 30px 40px;
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            text-align: center;
         }
 
-        .result-text {
-            font-size: 1.5em;
-            margin-bottom: 30px;
+        .welcome-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
             text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+
+        .welcome-text {
+            font-size: 1.1em;
+            margin-bottom: 30px;
         }
 
         .menu-btn {
@@ -58,13 +64,19 @@
 </head>
 <body>
 
-<div class="result-box">
-    <div class="result-text">
-        <c:out value="${sessionScope.result.getText()}" />
-    </div>
+<div class="welcome-box">
+    <div class="welcome-title">Вітаємо у нашому текстовому квесті!</div>
+    <div class="welcome-text">Тут ви можете пережити унікальні пригоди у вигаданих світах.</div>
 
-    <a href="${pageContext.request.contextPath}/" class="menu-btn">Вернутися в меню</a>
+    <c:if test="${not empty user_wins}">
+        <div class="welcome-text">Ваші перемоги: ${user_wins}</div>
+    </c:if>
+
+    <form action="${pageContext.request.contextPath}/welcome" method="post">
+        <button type="submit" class="menu-btn">Почати грати</button>
+    </form>
 </div>
+
 
 </body>
 </html>

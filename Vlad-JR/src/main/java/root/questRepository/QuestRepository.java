@@ -1,27 +1,47 @@
 package root.questRepository;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import root.model.Stage;
-import java.io.InputStream;
+
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
 import java.util.Map;
 
 public class QuestRepository {
+
     private final Map<String, Stage> stages;
 
     public QuestRepository(String resourcePath) throws IOException {
-        // Initializing quest repository
+        this.stages = loadStagesFromJson(resourcePath);
+    }
+
+    private Map<String, Stage> loadStagesFromJson(String resourcePath) throws IOException {
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(resourcePath);
+        if (inputStream == null) {
+            throw new IOException("File not found in resources: " + resourcePath);
+        }
 
         ObjectMapper mapper = new ObjectMapper();
+        JsonNode rootNode = mapper.readTree(inputStream);
 
-        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(resourcePath)) {
-            if (inputStream == null) {
-                throw new IOException("Файл не найден в resources: " + resourcePath);
+        Map<String, Stage> result = new HashMap<>();
+
+        for (Map.Entry<String, JsonNode> entry : rootNode.properties()) {
+            String key = entry.getKey();
+            if (isStageId(key)) {
+                Stage stage = mapper.treeToValue(entry.getValue(), Stage.class);
+                stage.setId(key);
+                result.put(key, stage);
             }
-
-            this.stages = mapper.readValue(inputStream, new TypeReference<Map<String, Stage>>() {});
         }
+
+        return result;
+    }
+
+    private boolean isStageId(String key) {
+        return key.matches("\\d+");
     }
 
     public Stage getStage(String id) {
@@ -29,6 +49,6 @@ public class QuestRepository {
     }
 
     public Stage getStartStage() {
-        return getStage("s0");
+        return getStage("0");
     }
 }

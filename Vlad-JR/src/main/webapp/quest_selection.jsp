@@ -6,7 +6,7 @@
 <html lang="ua">
 <head>
     <meta charset="UTF-8">
-    <title>Результат</title>
+    <title>Вибір квесту</title>
     <style>
         * {
             box-sizing: border-box;
@@ -25,45 +25,65 @@
             flex-direction: column;
         }
 
-        .result-box {
+        .quest-box {
             background-color: rgba(46, 46, 46, 0.85);
-            display: inline-block;
             padding: 30px 40px;
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            max-width: 600px;
+            width: 100%;
         }
 
-        .result-text {
-            font-size: 1.5em;
-            margin-bottom: 30px;
+        .quest-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
             text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
         }
 
-        .menu-btn {
+        .quest-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .quest-list li {
+            margin-bottom: 15px;
+        }
+
+        .quest-btn {
             padding: 12px 24px;
-            font-size: 1.2em;
+            font-size: 1.1em;
             border: none;
             border-radius: 8px;
             background-color: #2e2e2e;
             color: #fff;
-            text-decoration: none;
             cursor: pointer;
+            width: 100%;
             transition: background-color 0.3s ease;
         }
 
-        .menu-btn:hover {
+        .quest-btn:hover {
             background-color: #3a3a3a;
         }
     </style>
 </head>
 <body>
 
-<div class="result-box">
-    <div class="result-text">
-        <c:out value="${sessionScope.result.getText()}" />
-    </div>
-
-    <a href="${pageContext.request.contextPath}/" class="menu-btn">Вернутися в меню</a>
+<div class="quest-box">
+    <div class="quest-title">Оберіть квест</div>
+    <ul class="quest-list">
+        <c:forEach var="quest" items="${quests}">
+            <li>
+                <form action="${pageContext.request.contextPath}/quests" method="post">
+                    <input type="hidden" name="questPath" value="${quest.path}" />
+                    <button type="submit" class="quest-btn">
+                        <c:out value="${quest.name}" />
+                    </button>
+                </form>
+            </li>
+        </c:forEach>
+    </ul>
 </div>
 
 </body>

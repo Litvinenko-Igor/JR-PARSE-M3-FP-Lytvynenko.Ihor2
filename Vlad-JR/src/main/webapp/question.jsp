@@ -3,10 +3,10 @@
 <%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
-    <title>Текстовый Квест</title>
+    <title>Текстовий квест</title>
     <style>
         * {
             box-sizing: border-box;
@@ -87,7 +87,7 @@
             <label for="opt2"><c:out value="${sessionScope.question.getAnswerText(1)}" /></label>
         </div>
 
-        <button type="submit" class="submit-btn">Подтвердить</button>
+        <button type="submit" class="submit-btn">Підтвердити</button>
     </form>
 </div>
 
