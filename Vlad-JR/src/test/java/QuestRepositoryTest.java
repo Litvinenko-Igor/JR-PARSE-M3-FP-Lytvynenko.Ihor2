@@ -60,7 +60,6 @@ class QuestRepositoryTest {
         Exception exception = assertThrows(IOException.class, () -> {
             new QuestRepository("nonexistent.json");
         });
-
-        assertTrue(exception.getMessage().contains("Файл не найден"));
+        assertTrue(exception.getMessage().contains("File not found in resources"));
     }
 }
