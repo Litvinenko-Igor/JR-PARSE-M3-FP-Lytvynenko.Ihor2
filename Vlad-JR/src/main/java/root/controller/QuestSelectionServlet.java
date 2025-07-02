@@ -86,7 +86,6 @@ public class QuestSelectionServlet extends HttpServlet {
         return quests;
     }
 
-    // Simple POJO for representing a quest in the UI
     public static class QuestItem {
         private final String name;
         private final String path;
@@ -98,6 +97,10 @@ public class QuestSelectionServlet extends HttpServlet {
 
         public String getName() {
             return name;
+        }
+
+        public String getPath() {
+            return path;
         }
     }
 
