@@ -10,14 +10,13 @@ import java.util.Map;
 public class QuestionRepository {
     private static Map<String, Question> questions;
 
-    // Статичний блок ініціалізації
     static {
         questions = new HashMap<>();
         loadQuestionsFromJson();
     }
 
     private QuestionRepository() {
-        // Приватний конструктор для запобігання створення нових екземплярів
+
     }
 
     private static void loadQuestionsFromJson() {
@@ -25,7 +24,6 @@ public class QuestionRepository {
         try (InputStream inputStream = QuestionRepository.class.getClassLoader().getResourceAsStream("questions.json")) {
             if (inputStream == null) {
                 System.err.println("Помилка: файл questions.json не знайдено!");
-                // Ініціалізація за замовчуванням, якщо JSON відсутній
                 initializeDefaultQuestions();
                 return;
             }
@@ -41,12 +39,10 @@ public class QuestionRepository {
             });
         } catch (IOException e) {
             System.err.println("Помилка при завантаженні питань з JSON: " + e.getMessage());
-            // Ініціалізація за замовчуванням у разі помилки
             initializeDefaultQuestions();
         }
     }
 
-    // Метод для ініціалізації за замовчуванням (якщо JSON не вдалося завантажити)
     private static void initializeDefaultQuestions() {
         Map<String, String> startChoices = new HashMap<>();
         startChoices.put("door", "Відчинити скрипучі головні двері");
@@ -55,12 +51,10 @@ public class QuestionRepository {
                 "Ти опинився перед старовинним будинком, оточеним густим туманом. Вітер гудить у віконницях, а шепоти лоскочуть вуха. Що робиш?",
                 false, null, startChoices
         ));
-        // Додайте інші стани за потребою, якщо JSON не завантажився
     }
 
-    // Статичний метод для отримання екземпляра
     public static QuestionRepository getInstance() {
-        return new QuestionRepository(); // Повертаємо новий екземпляр, але questions вже ініціалізовані
+        return new QuestionRepository();
     }
 
     public Question getQuestion(String state) {

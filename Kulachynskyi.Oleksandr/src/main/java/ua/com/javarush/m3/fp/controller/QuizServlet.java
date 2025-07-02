@@ -11,11 +11,15 @@ import java.io.IOException;
 
 @WebServlet("/game")
 public class QuizServlet extends HttpServlet {
-    private QuestionRepository repository;
+    protected QuestionRepository repository;
 
     @Override
     public void init() {
         repository = QuestionRepository.getInstance();
+    }
+
+    public QuestionRepository getRepository() {
+        return repository;
     }
 
     @Override
@@ -73,10 +77,6 @@ public class QuizServlet extends HttpServlet {
                     session.setAttribute("wins", wins != null ? wins + 1 : 1);
                 }
             }
-        }
-
-        if (request.getAttribute("gameState") == null) {
-            request.setAttribute("gameState", repository.getQuestion("start"));
         }
         request.getRequestDispatcher("/game.jsp").forward(request, response);
     }

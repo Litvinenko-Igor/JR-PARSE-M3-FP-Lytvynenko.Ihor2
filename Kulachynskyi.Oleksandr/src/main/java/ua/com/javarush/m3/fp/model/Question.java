@@ -23,7 +23,6 @@ public class Question {
         return isGameOver;
     }
 
-    // Явний геттер для EL
     public boolean getIsGameOver() {
         return isGameOver;
     }
