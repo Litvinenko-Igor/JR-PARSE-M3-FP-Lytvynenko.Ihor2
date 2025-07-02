@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import ua.com.javarush.m3.fp.model.Question;
 import ua.com.javarush.m3.fp.repository.QuestionRepository;
 
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 

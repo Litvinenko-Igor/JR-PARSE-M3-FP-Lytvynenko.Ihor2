@@ -16,7 +16,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
-import java.util.Map;
 
 import static org.mockito.Mockito.*;
 
@@ -39,7 +38,6 @@ class QuizServletTest {
     void setUp() throws NoSuchFieldException, IllegalAccessException {
         MockitoAnnotations.openMocks(this);
         servlet = new QuizServlet();
-        // Встановлюємо repository через рефлексію в поле
         Field repositoryField = QuizServlet.class.getDeclaredField("repository");
         repositoryField.setAccessible(true);
         repositoryField.set(servlet, repository);
@@ -61,7 +59,7 @@ class QuizServletTest {
         verify(session).setAttribute("gamesPlayed", 0);
         verify(session).setAttribute("wins", 0);
         verify(session).setAttribute("currentState", "start");
-        verify(request).setAttribute(eq("gameState"), eq(startQuestion)); // Точна перевірка
+        verify(request).setAttribute(eq("gameState"), eq(startQuestion));
         verify(dispatcher).forward(request, response);
     }
 
@@ -78,7 +76,7 @@ class QuizServletTest {
 
         verify(session).setAttribute("currentState", "start");
         verify(session).setAttribute("gamesPlayed", 2);
-        verify(request).setAttribute(eq("gameState"), eq(startQuestion)); // Точна перевірка
+        verify(request).setAttribute(eq("gameState"), eq(startQuestion));
         verify(dispatcher).forward(request, response);
     }
 
@@ -94,7 +92,7 @@ class QuizServletTest {
         doPostMethod.invoke(servlet, request, response);
 
         verify(session).setAttribute("currentState", "hall");
-        verify(request).setAttribute(eq("gameState"), eq(hallQuestion)); // Точна перевірка
+        verify(request).setAttribute(eq("gameState"), eq(hallQuestion));
         verify(dispatcher).forward(request, response);
     }
 }
