@@ -1,5 +1,8 @@
 package quest.model;
 
+import lombok.Getter;
+
+@Getter
 public class PlayerStats {
     private String playerName;
     private int gamesPlayed;
@@ -32,12 +35,6 @@ public class PlayerStats {
     }
 
 
-    public String getPlayerName() { return playerName; }
-    public int getGamesPlayed() { return gamesPlayed; }
-    public int getVictories() { return victories; }
-    public int getDefeats() { return defeats; }
-    public int getCurrentStreak() { return currentStreak; }
-    public int getBestStreak() { return bestStreak; }
     public double getWinRate() {
         return gamesPlayed == 0 ? 0 : (double) victories / gamesPlayed * 100;
     }

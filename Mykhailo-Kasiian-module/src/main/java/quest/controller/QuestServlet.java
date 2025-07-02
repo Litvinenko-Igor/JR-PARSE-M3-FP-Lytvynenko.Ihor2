@@ -30,10 +30,7 @@ public class QuestServlet extends HttpServlet {
             GameLogic logic = new GameLogic();
             session.setAttribute("logic", logic);
             
-            // Встановлюємо початкові значення
-            req.setAttribute("question", logic.getQuestion());
-            req.setAttribute("options", logic.getOptions());
-            req.getRequestDispatcher("question.jsp").forward(req, resp);
+            setAttributesAndForward(req, resp, logic, "question.jsp");
             return;
         }
 
@@ -55,9 +52,7 @@ public class QuestServlet extends HttpServlet {
         if (req.getParameter("restart") != null) {
             logic = new GameLogic();
             session.setAttribute("logic", logic);
-            req.setAttribute("question", logic.getQuestion());
-            req.setAttribute("options", logic.getOptions());
-            req.getRequestDispatcher("question.jsp").forward(req, resp);
+            setAttributesAndForward(req, resp, logic, "question.jsp");
             return;
         }
 
@@ -75,11 +70,13 @@ public class QuestServlet extends HttpServlet {
             // Оновлюємо статистику
             stats.addGameResult(logic.isVictory());
             session.setAttribute("playerStats", stats); // Зберігаємо оновлену статистику
-            
+
+            req.setAttribute("question", logic.getQuestion());
+            req.setAttribute("options", logic.getOptions());
             req.setAttribute("result", logic.isVictory() ? "Перемога" : "Поразка");
             req.getRequestDispatcher("result.jsp").forward(req, resp);
         } else {
-            req.getRequestDispatcher("question.jsp").forward(req, resp);
+            setAttributesAndForward(req, resp, logic, "question.jsp");
         }
     }
 
@@ -95,12 +92,21 @@ public class QuestServlet extends HttpServlet {
             // Якщо гравець вже є, створюємо нову гру
             GameLogic logic = new GameLogic();
             session.setAttribute("logic", logic);
-            req.setAttribute("question", logic.getQuestion());
-            req.setAttribute("options", logic.getOptions());
-            req.getRequestDispatcher("question.jsp").forward(req, resp);
+            setAttributesAndForward(req, resp, logic, "question.jsp");
         } else {
             // Якщо гравця немає, перенаправляємо на сторінку входу
             req.getRequestDispatcher("index.jsp").forward(req, resp);
         }
     }
+
+    private void setAttributesAndForward(HttpServletRequest req,
+                                         HttpServletResponse resp,
+                                         GameLogic logic,
+                                         String jspPage)
+            throws ServletException, IOException {
+        req.setAttribute("question", logic.getQuestion());
+        req.setAttribute("options", logic.getOptions());
+        req.getRequestDispatcher(jspPage).forward(req, resp);
+    }
+
 }
