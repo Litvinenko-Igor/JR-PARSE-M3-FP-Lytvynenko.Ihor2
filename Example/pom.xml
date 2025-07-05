@@ -23,6 +23,6 @@
 
   </dependencies>
   <build>
-    <finalName>oleksandr-horrorquest</finalName>
+    <finalName>example</finalName>
   </build>
 </project>
