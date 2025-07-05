@@ -12,12 +12,12 @@
   <modules>
     <module>Example</module>
     <module>Homepage</module>
-    <module>Oleksandr-JR</module>
     <module>Oleksii-Lytvynenko</module>
     <module>Andrii-Gul</module>
     <module>Mykhailo-Kasiian-module</module>
     <module>Vlad-JR</module>
-  </modules>
+    <module>Kulachynskyi.Oleksandr</module>
+    </modules>
 
   <version>1.0</version>
   <name>JR-PARSE-M3-FP Maven Webapp</name>
@@ -32,8 +32,8 @@
     <mockito-core.version>5.15.2</mockito-core.version>
     <junit-jupiter-engine.version>5.12.0</junit-jupiter-engine.version>
 
-    <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
-    <jstl.version>1.2</jstl.version>
+        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+        <jstl.version>1.2</jstl.version>
 
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
