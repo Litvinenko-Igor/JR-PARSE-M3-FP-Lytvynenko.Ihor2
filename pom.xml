@@ -18,7 +18,8 @@
     <module>Vlad-JR</module>
     <module>Kulachynskyi.Oleksandr</module>
     <module>Artur_Mogil</module>
-    </modules>
+      <module>Lytvynenko_Ihor</module>
+  </modules>
 
   <version>1.0</version>
   <name>JR-PARSE-M3-FP Maven Webapp</name>
